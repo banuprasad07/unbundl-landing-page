@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clove Dental – Root Canal Treatment</title>
+
+  <!-- Font (change if your Figma uses another) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- =========================
+       HEADER / NAVBAR
+  ========================== -->
+  <header class="header">
+    <div class="container header__content">
+      <div class="logo">clove<span class="logo__smiley">:)</span> DENTAL</div>
+
+      <nav class="nav-menu">
+        <a href="#hero">Home</a>
+        <a href="#treatments">Treatments</a>
+        <a href="#transformations">Results</a>
+        <a href="#why-clove">Why Clove</a>
+        <a href="#locations">Clinics</a>
+      </nav>
+
+      <button class="menu-btn" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO / TOP BANNER
+  ========================== -->
+  <section id="hero" class="hero">
+    <div class="container hero__wrapper">
+
+      <!-- Left : Doctor photo + overlay text -->
+      <div class="hero__left">
+        <div class="hero__photo">
+          <!-- export big doctor banner as hero-image.png -->
+          <img src="images/hero.png" alt="Doctor at Clove Dental" />
+
+          <div class="hero__overlay-card">
+            <h2>Painless Root Canal Treatment in Delhi</h2>
+            <p>Expert RCT. Zero pain. Right here in Delhi.</p>
+            <a href="#treatments" class="btn btn--primary hero__overlay-btn">
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right : Form card -->
+      <div class="hero__right">
+        <div class="hero__form-card">
+          <h2>Get Expert Dental Guidance in Delhi</h2>
+          <p>
+            Book your free consultation today and take the first step towards
+            healthy, beautiful teeth.
+          </p>
+
+          <form class="hero-form" action="#" method="post">
+            <div class="form-field">
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="form-field">
+              <input type="tel" placeholder="Mobile Number" />
+            </div>
+
+            <div class="form-field form-field--captcha">
+              <input type="text" placeholder="Captcha" />
+              <div class="captcha-box">1514</div>
+            </div>
+
+            <label class="form-checkbox">
+              <input type="checkbox" />
+              <span>
+                I agree to CLOVE Dental's Terms and Privacy Policy and consent to
+                contact via phone, email, or SMS.
+              </span>
+            </label>
+
+            <button type="submit" class="btn btn--primary hero__submit-btn">
+              Book a Free Consultation
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom stats strip -->
+    <div class="hero-stats">
+      <div class="container hero-stats__row">
+        <span>600+ Clinics</span>
+        <span>1300+ Dentists</span>
+        <span>30L+ Happy Patients</span>
+        <span>35K+ Ortho Cases</span>
+        <span>55K+ Implants Placed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       TYPES OF ROOT CANAL TREATMENTS
+  ========================== -->
+  <section id="treatments" class="treatments">
+    <div class="container">
+      <h2 class="section-title">Types of Root Canal Treatments</h2>
+      <p class="section-subtitle">
+        In a root canal, the dentist removes infected pulp, cleans the tooth, and fills it with special material.
+      </p>
+
+      <div class="treatments-grid">
+        <!-- Card 1: Root Canal Treatment -->
+        <article class="treatment-card">
+          <div class="treatment-card__image">
+            <img src="images/root-canal.png" alt="Root Canal Treatment illustration" />
+          </div>
+          <div class="treatment-card__content">
+            <h3>Root Canal Treatment</h3>
+            <p>Ideal for infected or damaged tooth.</p>
+
+            <p class="treatment-card__label">Types of RCT</p>
+            <ul class="treatment-card__list">
+              <li>Root Canal Treatment</li>
+              <li>Split RCT</li>
+              <li>Split RCT with rubber dam</li>
+              <li>Split RCT with laser</li>
+            </ul>
+
+            <p class="treatment-card__price-label">Starting Price</p>
+            <p class="treatment-card__price">₹ 19,999</p>
+
+            <a href="#hero" class="btn btn--primary treatment-card__btn">Get Free Consultation</a>
+          </div>
+        </article>
+
+        <!-- Card 2: Re-Root Canal Treatment -->
+        <article class="treatment-card">
+          <div class="treatment-card__image">
+            <img src="images/re-root-canal.png" alt="Re-Root Canal Treatment illustration" />
+          </div>
+          <div class="treatment-card__content">
+            <h3>Re-Root Canal Treatment</h3>
+            <p>Ideal for issues that persist or recur after an initial root canal treatment.</p>
+
+            <p class="treatment-card__label">Types of RCT</p>
+            <ul class="treatment-card__list">
+              <li>Re-RCT with rubber dam</li>
+              <li>Re-RCT laser specialist</li>
+              <li>e-RCT with retrieval of old RCT filling</li>
+            </ul>
+
+            <p class="treatment-card__price-label">Starting Price</p>
+            <p class="treatment-card__price">₹ 19,999</p>
+
+            <a href="#hero" class="btn btn--primary treatment-card__btn">Get Free Consultation</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       REAL SMILES, REAL TRANSFORMATIONS
+  ========================== -->
+  <section id="transformations" class="real-smiles">
+    <div class="container">
+      <h2 class="section-title">Real Smiles, Real Transformations</h2>
+      <p class="section-subtitle">
+        See the life-changing results our dental implant patients enjoy
+      </p>
+
+      <div class="real-smiles__grid">
+        <article class="real-smiles__card">
+          <img src="images/patient-1.png" alt="Patient Arjun Mehta" />
+          <p class="real-smiles__name">Arjun Mehta</p>
+          <p class="real-smiles__city">Mumbai</p>
+        </article>
+
+        <article class="real-smiles__card">
+          <img src="images/patient-2.png" alt="Patient Kavita Sharma" />
+          <p class="real-smiles__name">Kavita Sharma</p>
+          <p class="real-smiles__city">Bangalore</p>
+        </article>
+
+        <article class="real-smiles__card">
+          <img src="images/patient-3.png" alt="Patient Yamini" />
+          <p class="real-smiles__name">Yamini</p>
+          <p class="real-smiles__city">Bangalore</p>
+        </article>
+
+        <article class="real-smiles__card">
+          <img src="images/patient-4.png" alt="Patient Neha Joshi" />
+          <p class="real-smiles__name">Neha Joshi</p>
+          <p class="real-smiles__city">Delhi</p>
+        </article>
+
+
+        <!-- add/remove cards as per your Figma -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       WHY CHOOSE CLOVE DENTAL
+  ========================== -->
+  <section id="why-clove" class="why-clove">
+    <div class="container why-clove__layout">
+      <div class="why-clove__left">
+        <h2 class="section-title section-title--left">Why Choose Clove Dental</h2>
+        <p class="section-subtitle section-subtitle--left">
+          Clove Dental is India’s leading dental care brand with 600+ clinics nationwide.
+        </p>
+
+        <ul class="why-clove__list">
+          <li>DORI – A.I. enabled dental chair</li>
+          <li>10x Safety and 4 steps sterilization process</li>
+          <li>Experienced and Certified implantologist</li>
+          <li>Updated with world class equipments</li>
+          <li>Regular audits for safety protocols</li>
+        </ul>
+      </div>
+
+      <div class="why-clove__right">
+        <!-- export this as why-clove.png -->
+        <img src="images/why-clove.png" alt="Dentists at Clove Dental" />
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       FIND US ACROSS INDIA
+  ========================== -->
+  <section id="locations" class="locations">
+    <div class="container">
+      <h2 class="section-title">Find Us Across India</h2>
+      <p class="section-subtitle">
+        With over 500 clinics across India, you’re never too far from a Clove Dental clinic.
+        Choose your preferred city to book an appointment.
+      </p>
+
+      <div class="locations__layout">
+        <!-- Left: City cards -->
+        <div class="locations__cities">
+          <button class="city-card">
+            <span class="city-card__name">Delhi/NCR</span>
+            <span class="city-card__count">190 Clinics</span>
+          </button>
+          <button class="city-card">
+            <span class="city-card__name">Bangalore</span>
+            <span class="city-card__count">110 Clinics</span>
+          </button>
+          <button class="city-card">
+            <span class="city-card__name">Mumbai</span>
+            <span class="city-card__count">40 Clinics</span>
+          </button>
+          <button class="city-card">
+            <span class="city-card__name">Chennai</span>
+            <span class="city-card__count">59 Clinics</span>
+          </button>
+          <button class="city-card">
+            <span class="city-card__name">Hyderabad</span>
+            <span class="city-card__count">76 Clinics</span>
+          </button>
+          <button class="city-card">
+            <span class="city-card__name">Punjab</span>
+            <span class="city-card__count">27 Clinics</span>
+          </button>
+          <button class="city-card">
+            <span class="city-card__name">Pune</span>
+            <span class="city-card__count">76 Clinics</span>
+          </button>
+          <button class="city-card">
+            <span class="city-card__name">Ahmedabad</span>
+            <span class="city-card__count">27 Clinics</span>
+          </button>
+        </div>
+
+        <!-- Right: Clinic photos grid -->
+        <div class="locations__photos">
+          <img src="images/clinic-1.png" alt="Clove clinic exterior 1" />
+          <img src="images/clinic-2.png" alt="Clove clinic exterior 2" />
+          <img src="images/clinic-3.png" alt="Clove clinic exterior 3" />
+          <img src="images/clinic-4.png" alt="Clove clinic exterior 4" />
+          <img src="images/clinic-5.png" alt="Clove clinic exterior 5" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+<footer id="footer" class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="footer__brand-main">clove<span class="footer__brand-smiley">:)</span></span>
+      <span class="footer__brand-sub">DENTAL</span>
+    </div>
+
+    <nav class="footer__nav">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of service</a>
+      <a href="#">Accessibility</a>
+    </nav>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>
+      All Rights Reserved - 2024, Clove Dental (a brand name of M/s. SSstar Dental Centre Private Limited).
+      Managed by Unbundl.
+    </p>
+  </div>
+</footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

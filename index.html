@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clove Dental – Root Canal Treatment</title>
 
-  <!-- Font (change if your Figma uses another) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,7 +14,9 @@
   ========================== -->
   <header class="header">
     <div class="container header__content">
-      <div class="logo">clove<span class="logo__smiley">:)</span> DENTAL</div>
+      <div class="logo">
+        clove<span class="logo__smiley">:)</span> <span class="logo__sub">DENTAL</span>
+      </div>
 
       <nav class="nav-menu">
         <a href="#hero">Home</a>
@@ -33,78 +34,89 @@
     </div>
   </header>
 
+  
+ <!-- =========================
+     HERO SECTION
+========================== -->
+<section id="hero" class="hero">
+
+  <div class="hero__content">
+
+    <!-- LEFT TRANSPARENT INFO CARD -->
+    <div class="hero-trans">
+      <h2>Painless Root Canal Treatment in Delhi</h2>
+      <p>Expert RCT. Zero Pain. Right Here in Delhi.</p>
+      <button class="btn btn--primary">Book Appointment</button>
+    </div>
+
+    <!-- CENTER DOCTOR IMAGE -->
+    <div class="hero__doctor-wrap">
+      <img src="images/doctor.png" alt="Expert Dentist" class="hero__doctor">
+    </div>
+
+    <!-- RIGHT SOLID FORM CARD -->
+    <div class="hero-solid">
+      <h3>Get Expert Dental Guidance in Delhi</h3>
+      <p>Book your free consultation today and take the first step towards healthy, beautiful teeth.</p>
+
+      <form class="hero-form">
+        <input type="text" placeholder="Name">
+        <input type="tel" placeholder="Mobile Number">
+
+        <div class="captcha-row">
+          <input type="text" placeholder="Captcha">
+          <div class="captcha-box">1514</div>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>I agree to CLOVE Dental’s Terms and Privacy Policy and consent to contact via phone, email, or SMS.</span>
+        </label>
+
+        <button class="btn btn--primary btn--full">Book a Free Consultation</button>
+      </form>
+    </div>
+
+  </div>
+
   <!-- =========================
-       HERO / TOP BANNER
+       HERO STATS ROW (ADDED)
   ========================== -->
-  <section id="hero" class="hero">
-    <div class="container hero__wrapper">
+ <div class="hero-stats">
+  <div class="container hero-stats__row">
 
-      <!-- Left : Doctor photo + overlay text -->
-      <div class="hero__left">
-        <div class="hero__photo">
-          <!-- export big doctor banner as hero-image.png -->
-          <img src="images/hero.png" alt="Doctor at Clove Dental" />
-
-          <div class="hero__overlay-card">
-            <h2>Painless Root Canal Treatment in Delhi</h2>
-            <p>Expert RCT. Zero pain. Right here in Delhi.</p>
-            <a href="#treatments" class="btn btn--primary hero__overlay-btn">
-              Book Appointment
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right : Form card -->
-      <div class="hero__right">
-        <div class="hero__form-card">
-          <h2>Get Expert Dental Guidance in Delhi</h2>
-          <p>
-            Book your free consultation today and take the first step towards
-            healthy, beautiful teeth.
-          </p>
-
-          <form class="hero-form" action="#" method="post">
-            <div class="form-field">
-              <input type="text" placeholder="Name" />
-            </div>
-            <div class="form-field">
-              <input type="tel" placeholder="Mobile Number" />
-            </div>
-
-            <div class="form-field form-field--captcha">
-              <input type="text" placeholder="Captcha" />
-              <div class="captcha-box">1514</div>
-            </div>
-
-            <label class="form-checkbox">
-              <input type="checkbox" />
-              <span>
-                I agree to CLOVE Dental's Terms and Privacy Policy and consent to
-                contact via phone, email, or SMS.
-              </span>
-            </label>
-
-            <button type="submit" class="btn btn--primary hero__submit-btn">
-              Book a Free Consultation
-            </button>
-          </form>
-        </div>
-      </div>
-
+    <div class="stat-item">
+      <img src="https://img.icons8.com/ios-filled/50/8b5b2c/hospital-room.png" alt="">
+      <span>600+ Clinics</span>
     </div>
 
-    <!-- Bottom stats strip -->
-    <div class="hero-stats">
-      <div class="container hero-stats__row">
-        <span>600+ Clinics</span>
-        <span>1300+ Dentists</span>
-        <span>30L+ Happy Patients</span>
-        <span>35K+ Ortho Cases</span>
-        <span>55K+ Implants Placed</span>
-      </div>
+    <div class="stat-item">
+      <img src="https://img.icons8.com/ios-filled/50/8b5b2c/medical-doctor.png" alt="">
+      <span>1300+ Dentists</span>
     </div>
-  </section>
+
+    <div class="stat-item">
+      <img src="https://img.icons8.com/ios-filled/50/8b5b2c/happy.png" alt="">
+      <span>30L+ Happy Patients</span>
+    </div>
+
+    <div class="stat-item">
+      <img src="https://img.icons8.com/ios-filled/50/8b5b2c/joint.png" alt="">
+      <span>35K+ Ortho Cases</span>
+    </div>
+
+
+    <div class="stat-item">
+      <img src="https://img.icons8.com/ios-filled/50/8b5b2c/dental-implant.png" alt="">
+      <span>55K+ Implants Placed</span>
+    </div>
+
+  </div>
+</div>
+
+
+</section>
+
 
   <!-- =========================
        TYPES OF ROOT CANAL TREATMENTS
@@ -117,7 +129,7 @@
       </p>
 
       <div class="treatments-grid">
-        <!-- Card 1: Root Canal Treatment -->
+        <!-- Card 1 -->
         <article class="treatment-card">
           <div class="treatment-card__image">
             <img src="images/root-canal.png" alt="Root Canal Treatment illustration" />
@@ -141,7 +153,7 @@
           </div>
         </article>
 
-        <!-- Card 2: Re-Root Canal Treatment -->
+        <!-- Card 2 -->
         <article class="treatment-card">
           <div class="treatment-card__image">
             <img src="images/re-root-canal.png" alt="Re-Root Canal Treatment illustration" />
@@ -170,43 +182,39 @@
   <!-- =========================
        REAL SMILES, REAL TRANSFORMATIONS
   ========================== -->
-  <section id="transformations" class="real-smiles">
-    <div class="container">
-      <h2 class="section-title">Real Smiles, Real Transformations</h2>
-      <p class="section-subtitle">
-        See the life-changing results our dental implant patients enjoy
-      </p>
+  <section class="real-smiles">
+  <h2>Real Smiles, Real Transformations</h2>
+  <p>See the life-changing results our dental implant patients enjoy</p>
 
-      <div class="real-smiles__grid">
-        <article class="real-smiles__card">
-          <img src="images/patient-1.png" alt="Patient Arjun Mehta" />
-          <p class="real-smiles__name">Arjun Mehta</p>
-          <p class="real-smiles__city">Mumbai</p>
-        </article>
-
-        <article class="real-smiles__card">
-          <img src="images/patient-2.png" alt="Patient Kavita Sharma" />
-          <p class="real-smiles__name">Kavita Sharma</p>
-          <p class="real-smiles__city">Bangalore</p>
-        </article>
-
-        <article class="real-smiles__card">
-          <img src="images/patient-3.png" alt="Patient Yamini" />
-          <p class="real-smiles__name">Yamini</p>
-          <p class="real-smiles__city">Bangalore</p>
-        </article>
-
-        <article class="real-smiles__card">
-          <img src="images/patient-4.png" alt="Patient Neha Joshi" />
-          <p class="real-smiles__name">Neha Joshi</p>
-          <p class="real-smiles__city">Delhi</p>
-        </article>
-
-
-        <!-- add/remove cards as per your Figma -->
-      </div>
+  <div class="real-smiles__grid">
+    
+    <div class="real-smiles__card">
+      <img src="images/patient-1.png" alt="">
+      <div class="real-smiles__name">Arjun Mehta</div>
+      <div class="real-smiles__city">Mumbai</div>
     </div>
-  </section>
+
+    <div class="real-smiles__card">
+      <img src="images/patient-2.png" alt="">
+      <div class="real-smiles__name">Kavita Sharma</div>
+      <div class="real-smiles__city">Bangalore</div>
+    </div>
+
+    <div class="real-smiles__card">
+      <img src="images/patient-3.png" alt="">
+      <div class="real-smiles__name">Yamini</div>
+      <div class="real-smiles__city">Bangalore</div>
+    </div>
+
+    <div class="real-smiles__card">
+      <img src="images/patient-4.png" alt="">
+      <div class="real-smiles__name">Neha Joshi</div>
+      <div class="real-smiles__city">Delhi</div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- =========================
        WHY CHOOSE CLOVE DENTAL
@@ -229,8 +237,7 @@
       </div>
 
       <div class="why-clove__right">
-        <!-- export this as why-clove.png -->
-        <img src="images/why-clove.png" alt="Dentists at Clove Dental" />
+        <img src="images/why_clove.png" alt="Dentists at Clove Dental" />
       </div>
     </div>
   </section>
@@ -247,7 +254,7 @@
       </p>
 
       <div class="locations__layout">
-        <!-- Left: City cards -->
+        <!-- Left: cities -->
         <div class="locations__cities">
           <button class="city-card">
             <span class="city-card__name">Delhi/NCR</span>
@@ -283,13 +290,12 @@
           </button>
         </div>
 
-        <!-- Right: Clinic photos grid -->
+        <!-- Right: clinic photos (2 x 2 grid; you have 4 images) -->
         <div class="locations__photos">
           <img src="images/clinic-1.png" alt="Clove clinic exterior 1" />
           <img src="images/clinic-2.png" alt="Clove clinic exterior 2" />
           <img src="images/clinic-3.png" alt="Clove clinic exterior 3" />
           <img src="images/clinic-4.png" alt="Clove clinic exterior 4" />
-          <img src="images/clinic-5.png" alt="Clove clinic exterior 5" />
         </div>
       </div>
     </div>
@@ -298,28 +304,27 @@
   <!-- =========================
        FOOTER
   ========================== -->
-<footer id="footer" class="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <span class="footer__brand-main">clove<span class="footer__brand-smiley">:)</span></span>
-      <span class="footer__brand-sub">DENTAL</span>
+  <footer id="footer" class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__brand-main">clove<span class="footer__brand-smiley">:)</span></span>
+        <span class="footer__brand-sub">DENTAL</span>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#">Accessibility</a>
+      </nav>
     </div>
 
-    <nav class="footer__nav">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of service</a>
-      <a href="#">Accessibility</a>
-    </nav>
-  </div>
-
-  <div class="container footer__bottom">
-    <p>
-      All Rights Reserved - 2024, Clove Dental (a brand name of M/s. SSstar Dental Centre Private Limited).
-      Managed by Unbundl.
-    </p>
-  </div>
-</footer>
-
+    <div class="container footer__bottom">
+      <p>
+        All Rights Reserved - 2024, Clove Dental (a brand name of M/s. SSstar Dental Centre Private Limited).
+        Managed by Unbundl.
+      </p>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
